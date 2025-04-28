@@ -45,7 +45,7 @@ export interface IStorage {
   deleteSavingsGoal(id: number): Promise<boolean>;
   
   // Session store
-  sessionStore: session.SessionStore;
+  sessionStore: any; // Using 'any' type to resolve SessionStore type issue
 }
 
 export class MemStorage implements IStorage {
@@ -61,7 +61,7 @@ export class MemStorage implements IStorage {
   currentBudgetId: number;
   currentSavingsGoalId: number;
   
-  sessionStore: session.SessionStore;
+  sessionStore: any; // Using 'any' type to resolve SessionStore type issue
 
   constructor() {
     this.users = new Map();
@@ -124,7 +124,12 @@ export class MemStorage implements IStorage {
   async createExpense(insertExpense: InsertExpense): Promise<Expense> {
     const id = this.currentExpenseId++;
     const now = new Date();
-    const expense: Expense = { ...insertExpense, id, createdAt: now };
+    const expense: Expense = { 
+      ...insertExpense, 
+      id, 
+      createdAt: now,
+      description: insertExpense.description || null // Handle null for description
+    };
     this.expenses.set(id, expense);
     return expense;
   }
@@ -160,7 +165,12 @@ export class MemStorage implements IStorage {
   async createIncome(insertIncome: InsertIncome): Promise<Income> {
     const id = this.currentIncomeId++;
     const now = new Date();
-    const income: Income = { ...insertIncome, id, createdAt: now };
+    const income: Income = { 
+      ...insertIncome, 
+      id, 
+      createdAt: now,
+      description: insertIncome.description || null // Handle null for description
+    };
     this.incomes.set(id, income);
     return income;
   }
@@ -222,7 +232,13 @@ export class MemStorage implements IStorage {
   async createSavingsGoal(insertSavingsGoal: InsertSavingsGoal): Promise<SavingsGoal> {
     const id = this.currentSavingsGoalId++;
     const now = new Date();
-    const savingsGoal: SavingsGoal = { ...insertSavingsGoal, id, createdAt: now };
+    const savingsGoal: SavingsGoal = { 
+      ...insertSavingsGoal, 
+      id, 
+      createdAt: now,
+      currentAmount: insertSavingsGoal.currentAmount || 0, // Set default for currentAmount
+      deadline: insertSavingsGoal.deadline || null // Set default for deadline
+    };
     this.savingsGoals.set(id, savingsGoal);
     return savingsGoal;
   }
