@@ -1,0 +1,50 @@
+Deliverable 3
+Deven, Sunny, Iida, Usaid, Kaushal - 3.1 Remember from deliverable-2 (a) the key external entities interacting with the system, (b) the key inputs and data sources, and (c) key data outputs and sinks. Use a 'Context Diagram' to summarize the relationships between these components. (10 points)
+
+Deven, Sunny, Iida, Usaid, Kaushal - 3.2 Provide a DFD-0 Diagram depicting the main processes in your system. (30 point)
+
+
+
+
+
+
+
+Deven, Sunny, Iida, Usaid, Kaushal - 3.3 Provide  Level-1 DFD diagrams (the decomposition of the process/functions from Level-0 with the required databases/data-source/data-sink, and the same inputs/outputs). Your DFD should be contextualized with a project dictionary table that briefly defines each component of DFDs (sub-processes, data-sets, sources, and sinks). (30 points)
+
+
+NOTE: Please include all necessary external entities (source/sink) and required data sources; label all data flows, balance your DFD; and ensure the labels are consistent with Level-0 DFD and Context Diagram. 
+
+
+
+
+
+
+
+
+
+
+
+Sunny & Iida - 3.4 Use Case Development. You need to draft a 'top-level' Use Case diagram along with its Narratives. The use case should be related to your Level-0 DFD. You will deliver a single Use Case Diagram, and multiple narratives, one for each use case. (30 points)
+
+
+
+Narratives:
+Use case objective: Log-in
+Primary actor: College students 
+Basic flow: Log-in successful 
+Alternative flow: Log-in fail, After 5 attempts, Reset the Password
+
+Use case objective: Register
+Primary actor: College students  
+Basic flow: Input an email and password
+Alternative flow: Domain is incorrect, must use sjsu.edu email. Passwords that do not follow guidelines or match, must be correct. 
+
+Use case objective: Input Expense
+Primary actor: College Students 
+Basic flow: Verify expense data. 
+Alternative flow: No expenses logged, No data for that time period.
+
+Use case objective: Update Profile
+Primary actor: College student
+Basic flow: Information like username, password, banking, preferred payment displayed on account  
+Alternative flow: Username or password does not follow guidelines, bank not accepted, preffered payment not accepted, prompts to correct it

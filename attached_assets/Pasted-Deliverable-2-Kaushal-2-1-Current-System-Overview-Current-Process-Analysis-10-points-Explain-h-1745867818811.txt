@@ -1,0 +1,84 @@
+Deliverable 2
+Kaushal- 2.1. Current System Overview (Current Process Analysis) (10 points)
+Explain how things are right now and discuss how they should be carried out to achieve better results. Your narrative should (a) provide a clear understanding of how the current process works in the absence of your solution, (b) discuss the limitations, redundancies or inefficiencies in the processes, and (c) anticipate how they should operate after your solution implementation. 
+
+Sunny, Iida, Kaushal, Usaid, Deven - 2.2. Requirement Analysis (30 points)
+Requirement analysis helps you identify the functional and non-functional requirements of the new system. 
+
+List 10 functional and 10 non-functional requirements in a table. Provide a short description of each requirement. Functional requirements are product features or functions that developers must implement to enable users to accomplish their tasks such as different mobile app features. Generally, functional requirements describe system behavior under specific conditions. Non-functional requirements describe how the system works for example system architecture, database type, and user authentication. 
+
+
+Functional 
+Non-functional
+Users should be able to log and categorize their expenses.
+User financial data should be securely stored and encrypted to prevent unauthorized access.
+Users should be able to create accounts
+2. The app should load quickly and process transactions in real-time.
+The app should allow users to set monthly budgets and compare their spending against limits.
+3. The app should have an intuitive and simple design that is easy for students to navigate.
+
+
+Users should be able to input different income sources, such as part-time jobs, scholarships, or allowances.
+4. The app should be accessible on both iOS and Android, with a responsive design for different screen sizes.
+The app should notify users about upcoming bills, due dates, and overspending alerts.
+5. The app should be able to handle an increasing number of users and additional features over time without performance issues.
+The app should provide charts and graphs to help users analyze their spending habits over time.
+6. Accessible on Mac and Windows operating systems as well
+Recurring expense tracking ex. Rent, and subscription fee if applicable to be logged automatically 
+7. Data should be displayed in visuals such as pie charts, bar graphs, and other graphics
+The users can use our AI tool to help save money on purchases each month.
+8. The system code should be well-documented for easier updates and maintenance
+The app should provide resources associated with better spending habits and money management
+9. Localization, the interface should support various languages e.g. English, Spanish, Chinese, etc
+Users can create and log in with accounts such as Google.
+10.  Login information can be stored in our database so students don’t need to re-login every time the app is launched.
+
+
+
+
+Kashal, Deven, and Usaid - 2.3. Feasibility Analysis
+Feasibility Analysis helps you address the viability of your project. It should determine if the project is a good idea after considering all significant factors such as potential obstacles, competition, and the funding. You need to report on the following feasibilities for this phase: 
+
+Sunny/Kaushal - 2.3.1 Market Feasibility: You need to justify your project by describing how you plan to position your product/business in the market/industry. You may conduct a simple market/competitor analysis to project the future market potential and sources of revenues. (10 points)
+Plan: Our plan to position our app in the market would be to advertise it to SJSU students. We would use the already existing apps like Sammy-App to reach students in an academic manner. We could even use the SJSU subreddit to advertise our app.
+Competitor Analysis: Currently,  students are relying on generic budgeting apps such as YNAB and Every dollar, which provide financial tracking but aren't tailored to student-specific needs. For example, purchases like textbooks, campus dining, tuition, etc. We differentiate ourselves by providing a simple mobile-friendly experience that aligns with students' financial spending habits.  We also integrate student discounts by showing our user-saving opportunities on and around campus. Our competitors focus on broader financial -goals such as debt repayment and investment tracking, which may not be as relevant to students trying to manage their education-related budgets.  
+
+Iida - 2.3.2 Economic Feasibility: You need to analyze the costs and benefits associated with the proposed project and explain, given the potential benefits and financial resources available to the project, whether the project is viable. You may discuss the tangible costs (on-time, recurring fixed, and recurring variable) as well as briefly intangible costs, and then justify them by citing tangible and intangible benefits. Rough estimates are acceptable. Add a table from your cost-benefit analysis excel work. Include the break-even point plot. Do not go into too much detail. You will talk a lot more about budget when we learn about implementation. (30 points)
+The benefit of this project is that it is not expensive to create. The project is viable, however, it will not bring in a huge amount of revenue, because our cost tracker is free, and subscription payment is optional. The cost to design, develop, and maintain a cost tracker app is approximately $1,500, which is a one-time cost. The recurring cost is Shopify, $79 per month, $948 per year, and approximately $1,000 for advertising. The cost tracker is free, however, users can pay a monthly subscription for about $3 to have an advertisement-free cost tracker.  
+
+
+
+
+Deven -  2.3.3 Technical Feasibility: The technical assessment helps answer the question such as whether the technology needed for the system exists, how difficult it will be to build, and whether you (or your client) and end-users have enough technical experience and infrastructure using and maintaining that technology in the future. (10 points)
+
+
+The technology required to create a budgeting app for SJSU students exists and is well-established, making the project highly feasible from a technical standpoint. Using tools like Flutter and Node.js provides scalability and real-time updates. There is also a wide range of tools that people with intermediate skills can use well. The main functions of the app feature budget tracking, notifications, and savings targets can be easily implemented with pre-existing libraries and frameworks while no new or experimental technologies are needed. Even optional integrations, like linking to financial aid and banking data via APIs (if SJSU and banks provide access), rely on standard protocols, though manual input remains as plan b. The difficulty of building the app is low to moderate.
+Most students nowadays own smartphones and are able to run cloud hosting which would eliminate the need for local server management. Development can leverage open-source tools provided by Shopify, reducing costs and enabling maintenance by student groups or future developers with minimal handoff effort. We can manage security with standard practices such as two-factor authentication, bypass keys, etc. If it requires more advanced features, we could collaborate with SJSU IT department. For long-term usage and maintenance, the technology is therefore not only present and scalable but also compatible with the technical capacities of both developers and users.
+
+
+
+Usaid - 2.3.4 Other feasibility concerns (optional): You can briefly discuss other feasibility concerns such as Resource Feasibility, Time/Schedule Feasibility, Operational Feasibility, and Legal/Ethical Feasibility.
+Time/Schedule Feasibility: The Minimum Viable Product can be completed within
+Operational Feasibility: Students are tech-savvy and will likely adopt the app.
+Legal/Ethical Feasibility: The tool complies with student data privacy laws (FERPA, GDPR).
+
+Iida - 2.4. Risk Analysis (10 points)
+Risk Analysis helps you identify risk factors and plan for the mitigation of them. The risk factors and mitigation strategies should be discussed under the following headings: 
+
+Development risk: relates to changing user requirements (including internal and external regulations) or misunderstanding of the requirements or even technology. Other factors include rapid technology change, integration difficulty, inaccurate cost/time estimates etc. 
+Risks; College students may request new features after initial implementation such as multi-account tracking. Another development risk includes integration difficulties such as ensuring compatibility with banking information and credit cards for transaction imports, which could be complex. 
+Mitigation; The mitigation strategies include conducting thorough requirement-gathering sessions with the whole team before development. Use agile development methodologies to best accommodate changing requirements through releases. Also performing technology research prior to choosing frameworks helps to minimize integration risks. Lastly, clear documentation must be maintained, and all team members must understand system requirements.
+Deployment risk: stems from a failure to install or launch the new system as planned or intended (e.g. integration difficulty, unexpected test results, the transition of legacy data into the new system, lack of management support, overhaul time/cost). 
+Risks; failure to launch on schedule due to, for example, unexpected bugs. Difficulties connecting to student discount providers, and performance issues such as transaction errors that might appear during testing. Students import past expense data, which could result in formatting errors. 
+Mitigation; Mitigation strategies include extensive testing before launch, and having a backup plan in case of API failure for automatic payments, such as a manual transaction entry option. Ensure data validation process for expense imports to prevent errors during legacy data transitions. Complete a small-scale test of the system with a small group of students before a full-scale launch
+
+
+Operational and maintenance risk: arises when the organization is not ready to utilize, adjust, maintain and support newly introduced technologies over the longer term (e.g. process re-engineering, customer support, resistance to change, user training, marketing (internally and externally), short-term inefficiency)
+Risks; Students may need to modify their existing budgeting habits, and some students may be hesitant to use an expense tracker instead of other manual methods. Ongoing system support such as bug fixes and updates can increase maintenance workload. The system might also face marketing challenges if it is not promoted effectively, leading to limited student adoption. Students may also need training and guidance on how to use the system effectively.
+Mitigation; Mitigation strategies include built-in tutorials and assistance to ease the beginning, as well as having help documentation. Have a team dedicated to system updates and bug fixes post-launch. Collaborate with student organizations such as financial aid and social media to increase awareness and adoption.
+
+
+
+
+-----
+Deliverable 2 reviewers: Deven and Iida

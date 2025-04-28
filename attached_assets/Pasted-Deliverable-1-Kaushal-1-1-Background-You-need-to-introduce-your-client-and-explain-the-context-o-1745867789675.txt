@@ -1,0 +1,57 @@
+Deliverable 1
+Kaushal - 1.1. Background: You need to introduce your client and explain the context of your project including your end-users. (10 points)
+ Our client is an SJSU student who, like other students, faces financial challenges due to tuition fees, rent, books, and other personal expenses. Managing finances effectively is crucial for students to maintain financial stability while having other educational and social responsibilities 
+
+Kaushal -1.2. Problem Statement: The need for your system should be identified and justified with concrete evidence. Discuss (a) how the need/opportunity was recognized; (b) the magnitude of the need/opportunity; and (c) the contributing (internal and external) factors to the need. (20 points)
+
+	The need for an expense tracking system for SJSU students is justified through discussions on common financial challenges such as high tuition costs, expensive housing, and the lack of budgeting skills. Many students face financial stress due to limited income, irresponsible expenses, and other economic pressures, making it difficult for students to manage essential costs effectively. The magnitude of this need is significant as many students struggle with money management, leading to overspending, debt, or a missed opportunity to save money. Some internal factors include challenges like psychological needs and limited financial literacy. Some external factors would be rising tuition, high living costs, and spending pressures. So, by providing students with our budgeting tool, our application will aim to help students track expenses, reduce financial stress, and develop better money-spending habits. 
+
+Usaid 1.3. Project Scope Statement
+Students may manage their finances with the aid of the SJSU Student Budgeting Tool, an online and mobile application. They may use it to track their spending, create budgets, and receive reminders to keep from going beyond. With features like semester-based budgeting and tuition reminders, it is designed especially for students, in contrast to other budgeting applications. It also offers advice on how to lessen stress and develop better financial abilities. Students can better manage their expenditures in the short term, and it helps them develop sound financial habits and pay off debt in the long run. Other university students may also find this user-friendly tool helpful.
+
+
+Deven - 1.3.1. Solution Description. Describe the objective/proposed solution and explain how it will meet the needs discussed in 1.2. You should discuss the type of system and technologies involved at an abstract level. (15 points)
+
+
+The SJSU Student Budgeting Tool is a mobile and web-based application designed to help San Jose State University students manage their finances effectively. With tools like goal-setting, budget management, and expense tracking, it addresses typical financial issues including tuition, housing, and a lack of budgeting skills. To prevent overspending, students can set budgets, track their spending, and get real-time notifications. In order to assist students make better decisions and reduce financial stress, the tool also offers educational resources that improve financial literacy. Students may prioritize necessary expenses, save money, and develop better financial habits with the help of the app, which gives them a clear picture of their finances and useful advice. 
+The system will be developed as a cross-platform application. The app's features will include push notifications for reminders, strong security features like encryption and authentication, and data visualization (such as charts and graphs) are important factors. The tool incorporates semester-based budgeting and local cost-of-living statistics, making it specifically designed for SJSU students. The goal of the SJSU Student Budgeting Tool is to help students achieve long-term financial stability, encourage smart spending, and lessen financial stress by integrating an intuitive design with useful functionality. 
+
+
+
+Deven - 1.3.2. Solution Rationales. Explain why your system is the best solution to address the problem. You may discuss the practicability and marketability of your new system and compare it with existing/alternative solutions to show the value of your solution. (15 points)
+The SJSU Student Budgeting Tool is the best solution for addressing the financial challenges faced by SJSU students due to its practicality, marketability, and unique value. With features like semester-based budgeting, tuition reminders, and local cost-of-living data, it is designed especially for students, in contrast to general budgeting apps. It is very practical due to its user-friendly design, a wide range of features (budget management, goal-setting, cost-tracking daily deals, and financial literacy tools), and real-time notifications. It offers a more useful, practical, and empowering answer than substitutes like manual tracking or generic apps. The tool is an essential service for students since it lowers financial stress, enhances money management, and promotes long-term financial stability. 
+Deven - 1.3.3.  Define the expected outcomes including the short-term outcomes and long-term impact of your innovation/solution. (15 points)
+The SJSU Student Budgeting Tool is expected to deliver significant short-term and long-term outcomes for students. In the short term, it will assist students in better managing their budgets and tracking their expenses, preventing overspending and allowing more efficient money management. While in-app learning materials will increase financial literacy and enable students to make wise decisions, real-time notifications and reminders will lessen financial stress. Within the first several months of introduction, we are anticipating high adoption rates amongst SJSU students.
+In the long term, the tool will foster healthy financial habits, such as responsible spending and saving, that extend beyond college. By easing financial stress, it will boost savings, lower student loan debt, and enhance academic achievement. Students' lifetime financial well-being will be promoted by the abilities they acquire using the tool. Furthermore, the tool's success at SJSU can be used as a template for other academic institutions, increasing its influence and advancing a larger movement for stability and financial literacy. All things considered, the tool gives students the ability to attain both short-term financial control and long-term financial achievement.
+Sunny - 1.4. Baseline Plan 
+2/24 Deliverable 1 Due
+Project Initiation & Planning 
+Team contract
+Team agreement
+Brainstorming (decided on student expense tracker)
+Define project requirements
+Plan short term and long-term goals
+3/3 Deliverable 2 Due
+Business Analysis
+Gather information from students
+Determine stream revenues and identity app features
+Evaluate system requirements
+3/27 Deliverable 3 Due
+Report Design
+Analyze technical alternatives
+Backend Development
+Implement student expense database
+Data model and network model
+4/21 Deliverable 4 Due
+Frontend Development
+Implement UI and UX
+Home page, Menu, buttons 
+Visual aids and graphics such as charts for expenses
+4/28 Deliverable 5 Due
+Implementation & Testing 
+Execute master plan
+Test run for peers 
+Create user guides and how-to’s 
+Develop marketing plan
+
+
