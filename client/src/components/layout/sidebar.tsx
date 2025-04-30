@@ -15,6 +15,7 @@ const mainNavItems: NavItem[] = [
   { label: "Budgets", href: "/budgets", icon: "account_balance" },
   { label: "Reports", href: "/reports", icon: "insert_chart" },
   { label: "Resources", href: "/resources", icon: "school" },
+  { label: "Profile", href: "/profile", icon: "person" },
 ];
 
 const semesterNavItems: NavItem[] = [

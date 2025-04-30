@@ -10,6 +10,7 @@ import IncomePage from "@/pages/income-page";
 import BudgetsPage from "@/pages/budgets-page";
 import ReportsPage from "@/pages/reports-page";
 import ResourcesPage from "@/pages/resources-page";
+import ProfilePage from "@/pages/profile-page";
 import { ProtectedRoute } from "./lib/protected-route";
 import { AuthProvider } from "./hooks/use-auth";
 
@@ -23,6 +24,7 @@ function Router() {
       <ProtectedRoute path="/budgets" component={BudgetsPage} />
       <ProtectedRoute path="/reports" component={ReportsPage} />
       <ProtectedRoute path="/resources" component={ResourcesPage} />
+      <ProtectedRoute path="/profile" component={ProfilePage} />
       <Route component={NotFound} />
     </Switch>
   );
