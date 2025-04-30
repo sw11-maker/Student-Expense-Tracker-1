@@ -37,11 +37,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       return await res.json();
     },
     onSuccess: (user: SelectUser) => {
+      console.log("Login successful, user data:", user);
       queryClient.setQueryData(["/api/user"], user);
       toast({
         title: "Login successful",
         description: `Welcome back, ${user.fullName}!`,
       });
+      
+      // Force a refetch of the user data to ensure we have the latest
+      queryClient.invalidateQueries({ queryKey: ["/api/user"] });
     },
     onError: (error: Error) => {
       toast({
@@ -58,11 +62,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       return await res.json();
     },
     onSuccess: (user: SelectUser) => {
+      console.log("Registration successful, user data:", user);
       queryClient.setQueryData(["/api/user"], user);
       toast({
         title: "Registration successful",
         description: `Welcome to SJSU Budget, ${user.fullName}!`,
       });
+      
+      // Force a refetch of the user data to ensure we have the latest
+      queryClient.invalidateQueries({ queryKey: ["/api/user"] });
     },
     onError: (error: Error) => {
       toast({

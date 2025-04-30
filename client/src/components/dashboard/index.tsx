@@ -12,10 +12,13 @@ import AddExpenseForm from "../expenses/add-expense-form";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 export default function Dashboard() {
-  const { user } = useAuth();
+  const { user, isLoading } = useAuth();
   const [showAddExpenseDialog, setShowAddExpenseDialog] = useState(false);
   
-  const firstName = user?.fullName.split(' ')[0] || 'Student';
+  console.log("Dashboard: User data:", user);
+  console.log("Dashboard: isLoading:", isLoading);
+  
+  const firstName = user?.fullName?.split(' ')[0] || 'Student';
   const today = new Date();
   
   return (

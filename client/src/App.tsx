@@ -16,13 +16,13 @@ import { AuthProvider } from "./hooks/use-auth";
 function Router() {
   return (
     <Switch>
+      <Route path="/auth" component={AuthPage} />
       <ProtectedRoute path="/" component={DashboardPage} />
       <ProtectedRoute path="/expenses" component={ExpensesPage} />
       <ProtectedRoute path="/income" component={IncomePage} />
       <ProtectedRoute path="/budgets" component={BudgetsPage} />
       <ProtectedRoute path="/reports" component={ReportsPage} />
       <ProtectedRoute path="/resources" component={ResourcesPage} />
-      <Route path="/auth" component={AuthPage} />
       <Route component={NotFound} />
     </Switch>
   );
