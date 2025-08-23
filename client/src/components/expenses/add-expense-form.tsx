@@ -46,7 +46,7 @@ export default function AddExpenseForm({ onSuccess }: AddExpenseFormProps) {
   const form = useForm<ExpenseFormValues>({
     resolver: zodResolver(expenseFormSchema),
     defaultValues: {
-      amount: "",
+      amount: 0,
       category: "",
       description: "",
       date: format(new Date(), "yyyy-MM-dd"),
@@ -165,7 +165,11 @@ export default function AddExpenseForm({ onSuccess }: AddExpenseFormProps) {
                 <FormControl>
                   <Input 
                     placeholder="E.g., Lunch at Student Union" 
-                    {...field} 
+                    value={field.value ?? ""}
+                    onChange={field.onChange}
+                    onBlur={field.onBlur}
+                    name={field.name}
+                    ref={field.ref}
                   />
                 </FormControl>
                 <FormMessage />

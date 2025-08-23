@@ -22,6 +22,21 @@ import {
   Tooltip
 } from "recharts";
 
+// Map Tailwind bg-* classes used in categories to hex colors for charts
+const TAILWIND_BG_TO_HEX: Record<string, string> = {
+  "bg-blue-500": "#3B82F6",
+  "bg-purple-500": "#A855F7",
+  "bg-green-500": "#22C55E",
+  "bg-yellow-500": "#EAB308",
+  "bg-pink-500": "#EC4899",
+  "bg-indigo-500": "#6366F1",
+  "bg-red-500": "#EF4444",
+  "bg-amber-500": "#F59E0B",
+  "bg-cyan-500": "#06B6D4",
+  "bg-teal-500": "#14B8A6",
+  "bg-gray-500": "#6B7280",
+};
+
 export default function BudgetsPage() {
   const { user } = useAuth();
   const [showAddBudgetDialog, setShowAddBudgetDialog] = useState(false);
@@ -86,6 +101,7 @@ export default function BudgetsPage() {
     name: getCategoryById(budget.category).name,
     value: budget.amount,
     color: getCategoryById(budget.category).color,
+    hexColor: TAILWIND_BG_TO_HEX[getCategoryById(budget.category).color] || "#8884d8",
   }));
   
   return (
@@ -129,10 +145,10 @@ export default function BudgetsPage() {
                           dataKey="value"
                         >
                           {pieChartData.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={entry.color.replace('bg-', '')} />
+                            <Cell key={`cell-${index}`} fill={entry.hexColor} />
                           ))}
                         </Pie>
-                        <Tooltip formatter={(value) => [`$${value.toFixed(2)}`, 'Budget']} />
+                        <Tooltip formatter={(value) => [`$${Number(value).toFixed(2)}`, 'Budget']} />
                       </PieChart>
                     </ResponsiveContainer>
                     <div className="mt-4 grid grid-cols-2 gap-2">
