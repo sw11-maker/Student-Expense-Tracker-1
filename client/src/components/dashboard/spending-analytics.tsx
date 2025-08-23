@@ -156,7 +156,7 @@ export default function SpendingAnalytics() {
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="date" />
                   <YAxis />
-                  <Tooltip formatter={(value) => [`$${value.toFixed(2)}`, 'Amount']} />
+                  <Tooltip formatter={(value) => [`$${Number(value).toFixed(2)}`, 'Amount']} />
                   <Line 
                     type="monotone" 
                     dataKey="amount" 
@@ -187,7 +187,7 @@ export default function SpendingAnalytics() {
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
-                  <Tooltip formatter={(value) => [`$${value.toFixed(2)}`, 'Amount']} />
+                  <Tooltip formatter={(value) => [`$${Number(value).toFixed(2)}`, 'Amount']} />
                 </PieChart>
               </ResponsiveContainer>
             </div>

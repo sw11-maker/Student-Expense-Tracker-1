@@ -273,7 +273,7 @@ export default function ReportsPage() {
                           <Cell key={`cell-${index}`} fill={entry.color.replace('bg-', '')} />
                         ))}
                       </Pie>
-                      <Tooltip formatter={(value) => [`$${value.toFixed(2)}`, 'Spent']} />
+                      <Tooltip formatter={(value) => [`$${Number(value).toFixed(2)}`, 'Spent']} />
                       <Legend />
                     </PieChart>
                   </ResponsiveContainer>
@@ -305,7 +305,7 @@ export default function ReportsPage() {
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="date" />
                       <YAxis />
-                      <Tooltip formatter={(value) => [`$${value.toFixed(2)}`, '']} />
+                      <Tooltip formatter={(value) => [`$${Number(value).toFixed(2)}`, '']} />
                       <Legend />
                       <Line 
                         type="monotone" 
@@ -411,7 +411,7 @@ export default function ReportsPage() {
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="month" />
                       <YAxis />
-                      <Tooltip formatter={(value) => [`$${value.toFixed(2)}`, 'Expenses']} />
+                      <Tooltip formatter={(value) => [`$${Number(value).toFixed(2)}`, 'Expenses']} />
                       <Bar dataKey="expenses" fill="#1E88E5" name="Expenses" />
                     </BarChart>
                   </ResponsiveContainer>

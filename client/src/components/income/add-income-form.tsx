@@ -48,7 +48,7 @@ export default function AddIncomeForm({ onSuccess }: AddIncomeFormProps) {
   const form = useForm<IncomeFormValues>({
     resolver: zodResolver(incomeFormSchema),
     defaultValues: {
-      amount: "",
+      amount: 0,
       source: "",
       description: "",
       date: format(new Date(), "yyyy-MM-dd"),
@@ -158,7 +158,11 @@ export default function AddIncomeForm({ onSuccess }: AddIncomeFormProps) {
                 <FormControl>
                   <Input 
                     placeholder="E.g., Campus part-time job payment" 
-                    {...field} 
+                    value={field.value ?? ""}
+                    onChange={field.onChange}
+                    onBlur={field.onBlur}
+                    name={field.name}
+                    ref={field.ref}
                   />
                 </FormControl>
                 <FormMessage />

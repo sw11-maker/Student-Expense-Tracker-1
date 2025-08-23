@@ -25,6 +25,7 @@ import {
 } from "@/components/ui/select";
 import { expenseCategories } from "@/lib/expense-categories";
 import { format, addMonths, addDays } from "date-fns";
+import { useEffect } from "react";
 
 // Budget periods
 const budgetPeriods = [
@@ -53,7 +54,7 @@ export default function AddBudgetForm({ onSuccess }: AddBudgetFormProps) {
   const form = useForm<BudgetFormValues>({
     resolver: zodResolver(budgetFormSchema),
     defaultValues: {
-      amount: "",
+      amount: 0,
       category: "",
       period: "monthly",
       startDate: format(new Date(), "yyyy-MM-dd"),
@@ -86,7 +87,7 @@ export default function AddBudgetForm({ onSuccess }: AddBudgetFormProps) {
   const watchStartDate = form.watch("startDate");
   
   // Update end date when period or start date changes
-  React.useEffect(() => {
+  useEffect(() => {
     updateEndDate(watchPeriod, watchStartDate);
   }, [watchPeriod, watchStartDate]);
   
