@@ -11,10 +11,6 @@ Offers a mobile-friendly design for on-the-go expense tracking
 **Technology Stack**
 
 TypeScript
-React
-Vite
-Tailwind CSS
-Drizzle ORM
 
 **License**
 
